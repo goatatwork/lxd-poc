@@ -1,5 +1,13 @@
 version: 2.1
 
+parameters:
+  artifact_path:
+    type: string
+    default: "/tmp/artifacts"
+
+orbs:
+  lxd-image-build: objectrocket/lxd-image-build@1.0.3
+
 workflows:
   test-deploy:
     jobs:
